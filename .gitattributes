@@ -1,0 +1,16 @@
+# Normalizar saltos de línea
+* text=auto
+
+# Identificar lenguajes del proyecto
+*.py linguist-detectable=true
+*.txt linguist-detectable=true
+*.md linguist-detectable=true
+
+# Ignorar binarios en estadísticas de lenguaje
+*.exe linguist-vendored
+*.dll linguist-vendored
+*.so linguist-vendored
+
+# Forzar UTF-8 en Markdown y TXT
+*.md text eol=lf working-tree-encoding=UTF-8
+*.txt text eol=lf working-tree-encoding=UTF-8
