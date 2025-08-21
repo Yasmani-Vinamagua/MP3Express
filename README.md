@@ -1,6 +1,10 @@
-# MP3Express
+# 🎵 MP3Express  
 
-**MP3Express** es una herramienta en Python que permite descargar y convertir videos de YouTube a **MP3** de manera rápida y sencilla.
+[![Python](https://img.shields.io/badge/Python-3.6%2B-blue)](https://www.python.org/) 
+[![FFmpeg](https://img.shields.io/badge/FFmpeg-required-orange)](https://ffmpeg.org/)
+
+**MP3Express** es una herramienta en Python que permite descargar y convertir videos de **YouTube** a **MP3** de forma rápida y sencilla.
+
 
 ---
 
