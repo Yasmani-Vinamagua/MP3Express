@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+build/
+dist/
+*.spec
+*.mp3
+# El ejecutable se distribuye en GitHub Releases, no en el repositorio
+*.exe
+
+# Editores y archivos locales
+.vscode/
+.idea/
+.claude/
+*.log
+YouTube_MP3/
+
+# Identidad de marca: trabajo interno, no se publica
+.yas/
