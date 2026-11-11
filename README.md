@@ -1,71 +1,119 @@
 <p align="center"><img src="assets/logo-color.png" alt="MP3Express" width="320"></p>
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
-[![FFmpeg](https://img.shields.io/badge/FFmpeg-incluido%20en%20el%20.exe-orange)](https://ffmpeg.org/)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Yasmani-Vinamagua/MP3Express)
+# 🎧 MP3Express
 
-**MP3Express** descarga el audio de videos de **YouTube** y lo convierte a **MP3**, con una interfaz gráfica simple.
+**Descarga y convierte audio de YouTube a MP3 de manera sencilla.**
 
-## 🎬 Míralo en 20 segundos
+MP3Express es una aplicación de escritorio para Windows desarrollada con **Python y CustomTkinter**, que permite convertir videos y listas de reproducción de YouTube a archivos MP3 mediante una interfaz intuitiva.
 
-[![Video de MP3Express: pega el link, pulsa Descargar](assets/brag.jpg)](assets/brag.mp4)
+Sin comandos complicados. Solo pega el enlace, selecciona la calidad y descarga.
 
-<sub>Haz clic en la imagen para ver el video. Música: Sascha Ende, [ende.app](https://ende.app/en) (CC BY 4.0).</sub>
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-5B3FD6)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-Incluido-F59E0B)
 
-## 🚀 Características
+**[📥 Descargar para Windows](https://github.com/Yasmani-Vinamagua/MP3Express/releases/latest)** · **[🐛 Reportar un problema](https://github.com/Yasmani-Vinamagua/MP3Express/issues)**
 
-- 🖱️ Ventana simple: pega links, pulsa **Descargar**. El campo trae un texto de ayuda con un ejemplo.
-- 📋 Varios links a la vez, listas de reproducción y carga desde un `.txt`.
-- 📊 Barra de progreso por canción, botón **Cancelar** y mensajes de error claros.
-- 🎚️ Calidad a elegir (128 / 192 / 320 kbps; por defecto 192) y carpeta de destino configurable.
-- 🌗 Tema claro u oscuro según el de Windows.
-- 📦 Ejecutable `.exe` con FFmpeg incluido: no hace falta instalar nada más.
-- 🔧 Uso personal y educativo. Respeta los derechos de autor y los términos de YouTube.
+---
 
-## 📥 Instalación
+## 🎬 Mira MP3Express en acción
 
-### Opción A: ejecutable (Windows)
+[![Demostración de MP3Express](assets/brag.jpg)](assets/brag.mp4)
 
-Descarga `MP3Express.exe` desde [Releases](https://github.com/Yasmani-Vinamagua/MP3Express/releases/latest) y ábrelo. Trae FFmpeg dentro (~110 MB): no necesitas instalar nada más.
+Una demostración rápida de cómo descargar audio en MP3.
 
-### Opción B: desde el código
+*Música de Sascha Ende, ende.app (CC BY 4.0).*
 
-1. Instala [Python](https://www.python.org/downloads/) y **FFmpeg**:
-   ```bash
-   winget install Gyan.FFmpeg
-   ```
-   (Alternativa manual: copia FFmpeg a `C:\ffmpeg\bin\ffmpeg.exe`.)
-2. Clona el repositorio e instala las dependencias:
-   ```bash
-   git clone https://github.com/Yasmani-Vinamagua/MP3Express.git
-   cd MP3Express
-   pip install -r requirements.txt
-   ```
+## ✨ Características
 
-## 🧪 Uso
+- **Descargas individuales y múltiples:** procesa varios enlaces en una misma operación.
+- **Listas de reproducción:** descarga el audio de playlists de YouTube.
+- **Importación de enlaces:** carga archivos `.txt` con múltiples URLs.
+- **Calidad configurable:** selecciona entre 128, 192 y 320 kbps.
+- **Progreso individual:** visualiza el estado de cada descarga.
+- **Cancelación:** detén el proceso cuando lo necesites.
+- **Carpeta personalizada:** elige dónde guardar tus archivos.
+- **Tema automático:** interfaz clara u oscura según Windows.
+- **Ejecutable independiente:** FFmpeg está incluido en la versión `.exe`.
+
+## 🚀 Cómo utilizarlo
+
+1. Descarga y abre **MP3Express.exe**.
+2. Pega uno o varios enlaces de YouTube.
+3. Selecciona la calidad del audio.
+4. Escoge la carpeta de destino.
+5. Haz clic en **Descargar**.
+
+Por defecto, los archivos se guardan en `YouTube_MP3` dentro de tu carpeta de usuario.
+
+## 💻 Instalación desde el código
+
+### Requisitos
+
+- Windows
+- Python 3.9 o superior
+- FFmpeg
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/Yasmani-Vinamagua/MP3Express.git
+cd MP3Express
+```
+
+### 2. Instalar dependencias
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Instalar FFmpeg
+
+```powershell
+winget install Gyan.FFmpeg
+```
+
+### 4. Ejecutar la aplicación
 
 ```bash
 python app.py
 ```
 
-1. Pega uno o varios links de YouTube (o pulsa **Pegar del portapapeles** / **Cargar .txt**).
-2. Elige calidad y carpeta (por defecto `C:\Users\<tu_usuario>\YouTube_MP3`).
-3. Pulsa **Descargar**. Puedes cancelar en cualquier momento.
+## 🛠️ Tecnologías utilizadas
 
-### Modo consola (opcional)
+| Tecnología | Función |
+|---|---|
+| Python | Lógica y desarrollo de la aplicación |
+| CustomTkinter | Interfaz gráfica |
+| yt-dlp | Obtención y descarga del contenido |
+| FFmpeg | Extracción y conversión de audio |
+| PyInstaller | Generación del ejecutable Windows |
 
-`python youtube_script.py` lee los links de `YouTube_MP3\youtube_links.txt`.
+## 📦 Compilar el ejecutable
 
-## 🛠️ Compilar el .exe
-
-Necesitas una carpeta con `ffmpeg.exe` y `ffprobe.exe`. Se recomienda el build *essentials* de [gyan.dev](https://www.gyan.dev/ffmpeg/builds/), que deja el `.exe` en ~110 MB (el build *full* lo lleva a ~210 MB).
+Para generar `MP3Express.exe`, necesitas `ffmpeg.exe` y `ffprobe.exe`.
 
 ```powershell
 .\build.ps1 -FFmpegBin "C:\ruta\a\ffmpeg\bin"
 ```
 
-El resultado queda en `dist\MP3Express.exe`.
+El archivo generado estará disponible en:
 
-## 🗺️ Próximos pasos
+`dist\MP3Express.exe`
 
-- Elegir qué videos descargar de una lista y metadatos/portada en el MP3.
+## 🤝 Contribuciones
+
+¿Tienes una sugerencia o encontraste un error?
+
+Puedes abrir un [Issue](https://github.com/Yasmani-Vinamagua/MP3Express/issues) para reportarlo o proponer una mejora.
+
+## ⚖️ Uso responsable
+
+MP3Express está destinado al uso personal y educativo con contenido propio o para el que tengas autorización.
+
+Respeta los derechos de autor y los términos de servicio de las plataformas.
+
+---
+
+Desarrollado por [Yasmani Vinamagua](https://github.com/Yasmani-Vinamagua).
