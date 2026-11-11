@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/logo-color.png" alt="MP3Express" width="320"></p>
 
-# 🎧 MP3Express
+---
 
 **Descarga y convierte audio de YouTube a MP3 de manera sencilla.**
 
