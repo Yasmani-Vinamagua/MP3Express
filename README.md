@@ -42,10 +42,9 @@ Una demostración rápida de cómo descargar audio en MP3.
 1. Descarga y abre **MP3Express.exe**.
 2. Pega uno o varios enlaces de YouTube.
 3. Selecciona la calidad del audio.
-4. Escoge la carpeta de destino.
-5. Haz clic en **Descargar**.
+4. Haz clic en **Descargar**.
 
-Por defecto, los archivos se guardan en `YouTube_MP3` dentro de tu carpeta de usuario.
+Por defecto, los archivos se guardan en `YouTube_MP3` dentro de tu carpeta de usuario. Si prefieres otra, usa **Cambiar carpeta** antes de descargar.
 
 ## 💻 Instalación desde el código
 
@@ -80,6 +79,10 @@ winget install Gyan.FFmpeg
 python app.py
 ```
 
+### Modo consola (opcional)
+
+También puedes descargar sin interfaz: `python youtube_script.py` lee los enlaces de `YouTube_MP3\youtube_links.txt`.
+
 ## 🛠️ Tecnologías utilizadas
 
 | Tecnología | Función |
@@ -92,7 +95,7 @@ python app.py
 
 ## 📦 Compilar el ejecutable
 
-Para generar `MP3Express.exe`, necesitas `ffmpeg.exe` y `ffprobe.exe`.
+Para generar `MP3Express.exe`, necesitas `ffmpeg.exe` y `ffprobe.exe`. Se recomienda el build *essentials* de [gyan.dev](https://www.gyan.dev/ffmpeg/builds/): deja el `.exe` en unos 110 MB (el build *full* lo lleva a unos 210 MB).
 
 ```powershell
 .\build.ps1 -FFmpegBin "C:\ruta\a\ffmpeg\bin"
