@@ -6,6 +6,12 @@
 
 **MP3Express** descarga el audio de videos de **YouTube** y lo convierte a **MP3**, con una interfaz gráfica simple.
 
+## 🎬 Míralo en 20 segundos
+
+[![Video de MP3Express: pega el link, pulsa Descargar](assets/brag.jpg)](assets/brag.mp4)
+
+<sub>Haz clic en la imagen para ver el video. Música: Sascha Ende, [ende.app](https://ende.app/en) (CC BY 4.0).</sub>
+
 ## 🚀 Características
 
 - 🖱️ Ventana simple: pega links, pulsa **Descargar**. El campo trae un texto de ayuda con un ejemplo.
